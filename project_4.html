@@ -23,8 +23,23 @@
 
     <main>
         <div class="text-container">
-            <h1>Project 4</h1>
-            <p>Add your project details here.</p>
+            <h1>Augmenting Bouldering</h1>
+
+            <img src="Images/Bouldering.png" alt="Bouldering setup overview" style="width: 100%; max-width: 500px; height: auto; margin: 1rem 0;">
+
+            <p>This project explores how real-time computer vision can be used to create an interactive bouldering experience. By combining pose estimation and object detection, the system tracks a climber's movement and detects interactions with handholds on a climbing wall, translating these interactions into dynamic sound feedback.</p>
+
+            <p>A key part of the project involved training custom object detection models using a self-created dataset in Roboflow. Handholds were annotated and used to train a YOLO-based model, enabling the system to recognize and differentiate holds in a real-world climbing environment.</p>
+
+            <p>The system is built in Unity using machine learning models running through Unity's inference engine. Pose data and detected handholds are processed through a modular, event-driven architecture, allowing vision, interaction logic, and audio systems to operate independently.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; margin: 1rem 0;">
+                <img src="Images/Bouldering1.png" alt="Bouldering computer vision detection" style="width: 500px; height: auto;">
+                <img src="Images/Bouldering2.png" alt="Bouldering interaction system in use" style="width: 500px; height: auto;">
+            </div>
+
+            <p>The project focuses on bridging the gap between raw model output and meaningful interaction. This includes handling noisy predictions, occlusion, and designing logic to detect when a climber is in contact with specific holds, demonstrating both the potential and limitations of vision-based interaction in dynamic physical environments.</p>
+
             <p><a href="projects.html">Back to Projects</a></p>
         </div>
     </main>

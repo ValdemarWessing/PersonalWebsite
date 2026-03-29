@@ -158,6 +158,17 @@ section{
 	object-fit: contain;
 	display: block;
 }
+
+.project-video {
+	display: block;
+	width: 100%;
+	max-width: 900px;
+	height: auto;
+	margin: 1rem 0 1.25rem;
+	border-radius: 8px;
+	background: #000;
+}
+
 body img {
 	max-width: 100%;
 	aspect-ratio: 1 / 1;
