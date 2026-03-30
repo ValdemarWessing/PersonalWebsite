@@ -172,7 +172,7 @@ section{
 body img {
 	max-width: 100%;
 	aspect-ratio: 1 / 1;
-	border-radius: 0em;
+	border-radius: 10px;
 	object-fit: cover;
 	object-position: bottom;
 	padding: 0.5em;
@@ -314,6 +314,14 @@ section > a[href^="project_"]:hover .flex-container h2 {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	font-weight: 700;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	white-space: normal;
+	overflow-wrap: anywhere;
+	line-height: 1.2;
+	overflow: hidden;
 	opacity: 0;
 	transition: opacity 180ms ease;
 	pointer-events: none;

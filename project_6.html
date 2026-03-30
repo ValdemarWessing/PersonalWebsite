@@ -22,21 +22,22 @@
     </nav>
 
     <main>
-        <div class="text-container">
+        <div class="flex-container" style="margin: 2rem 0;">
             <h1>Gesture controlled mouse</h1>
             <video class="project-video" controls preload="metadata">
                 <source src="Images/CV_ValdemarWessing.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            
-            <p>  This project explores real-time hand tracking and gesture-based interaction using computer vision. Built with OpenCV and MediaPipe, it transforms hand movements captured through a webcam into direct control of the computer’s mouse and system functions.</p>
+            <div class="text-container">
+                <p>This project explores real-time hand tracking and gesture-based interaction using computer vision. Built with OpenCV and MediaPipe, it transforms hand movements captured through a webcam into direct control of the computer's mouse and system functions.</p>
 
-            <p>  The system detects and tracks hand landmarks in real time, distinguishing between left and right hands to assign different control roles. The right hand is used for cursor movement, where the position of the index finger is mapped to screen coordinates with smoothing applied for stable motion. The left hand controls actions such as clicking, dragging, scrolling, and triggering system shortcuts through specific gestures.</p>
+                <p>The system detects and tracks hand landmarks in real time, distinguishing between left and right hands to assign different control roles. The right hand is used for cursor movement, where the position of the index finger is mapped to screen coordinates with smoothing applied for stable motion. The left hand controls actions such as clicking, dragging, scrolling, and triggering system shortcuts through specific gestures.</p>
 
-            <p>  Gestures are recognized by analyzing the relative positions of finger joints and fingertips. For example, bringing the thumb and index finger together triggers a mouse click, while different finger configurations enable dragging or scrolling. A constant-power mapping is used for smooth and intuitive control, and a defined interaction area ensures precision when translating hand movement to screen space.  </p>
+                <p>Gestures are recognized by analyzing the relative positions of finger joints and fingertips. For example, bringing the thumb and index finger together triggers a mouse click, while different finger configurations enable dragging or scrolling. A constant-power mapping is used for smooth and intuitive control, and a defined interaction area ensures precision when translating hand movement to screen space.</p>
 
-            <p>  The project demonstrates how computer vision and real-time input processing can be used to create alternative interaction methods. It highlights an interest in human-computer interaction, gesture recognition, and designing intuitive control systems without traditional input devices.</p>
-            <p><a href="projects.html">Back to Projects</a></p>
+                <p>The project demonstrates how computer vision and real-time input processing can be used to create alternative interaction methods. It highlights an interest in human-computer interaction, gesture recognition, and designing intuitive control systems without traditional input devices.</p>
+                <p><a href="projects.html">Back to Projects</a></p>
+            </div>
         </div>
     </main>
 </body>
