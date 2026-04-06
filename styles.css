@@ -1,10 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@600,0&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@600,0&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@600,0&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&display=swap');
 
 
@@ -15,9 +10,6 @@
 	--background-color: #fffaf5;
 	--card-color: #fce6d466;
 	--glass-bg: rgba(255, 255, 255, 0.4);
-	--glass-bg2: rgba(115, 243, 224, 0.246);
-	--glass-border: rgba(255, 255, 255, 0.6);
-	--glass-shadow: 0 10px 30px rgba(105, 101, 99, 0.12);
 }
 * {
 	margin: 0;
@@ -32,10 +24,7 @@ html {
 body {
 	font-family: 'Nunito', sans-serif;
 	color: var(--text-color);
-	/*background: linear-gradient(120deg, #8263ff, #518aed, #47ddce,#f7e8bb );
-	background-size: 300% 300%;
-	animation: AnimationName 30s ease infinite;*/
-    background: var(--background-color);
+	background: var(--background-color);
 	line-height: 1.6;
 }
 
@@ -47,6 +36,27 @@ h1, h2, h3 {
 	text-transform: uppercase;
 }
 
+h1 {
+	font-size: clamp(4rem, 5vw, 2.5rem);
+}
+
+h2 {
+	font-size: clamp(2rem, 5vw, 2.5rem);
+}
+
+h1 .h1-letter,
+h2 .h1-letter {
+	display: inline-block;
+	transition: transform 140ms ease;
+	transform-origin: 50% 70%;
+}
+
+h1 .h1-letter:hover,
+h2 .h1-letter:hover {
+	transform: scale(1.22);
+}
+
+/* Navigation */
 nav {
 	margin: 0em auto 3em auto;
 	position: sticky;
@@ -90,7 +100,7 @@ nav li:first-child a {
 	padding: 0.3rem 0.7rem;
 	border-radius: 1em;
 	border: 0.2em solid rgb(28, 24, 26);
-	background: var(--link-color)
+	background: var(--link-color);
 }
 
 .brand-lastname {
@@ -117,6 +127,8 @@ nav a:hover {
 nav a.brand-link:hover {
 	text-decoration: none;
 }
+
+/* Layout */
 main{
 	margin: 5em auto;
 	width: min(90em, 95%);
@@ -128,9 +140,10 @@ section{
 	padding: min(2em, 15%);
 }
 
+/* Shared blocks */
 .card_section {
 	background: var(--card-color);
-	border-radius: 0em;
+	border-radius: 0;
 	backdrop-filter: blur(12px) saturate(180%);
 	-webkit-backdrop-filter: blur(12px) saturate(180%);
 }
@@ -150,10 +163,10 @@ section{
 	font-weight: bold;
 }
 .profile-image {
-	border-radius: 0em;
+	border-radius: 0;
 	width: min(100%, 800px);
 	height: auto;
-	max-height:600px;
+	max-height: 600px;
 	aspect-ratio: auto;
 	object-fit: contain;
 	display: block;
@@ -177,13 +190,7 @@ body img {
 	object-position: bottom;
 	padding: 0.5em;
 }
-.flex-text {
-	background-color: var(--background-color);
-	padding: 1em;
-	border-radius: 8px;
-	width: 300px;
-	text-align: center;
-}
+
 .text-container {
 	flex: 0 1 34em;
 	order: 0;
@@ -202,38 +209,7 @@ body img {
 	text-decoration: underline;
 }
 
-h1 {
-	font-size: clamp(4rem, 5vw, 2.5rem);
-}
-
-h1 .h1-letter {
-	display: inline-block;
-	transition: transform 140ms ease;
-	transform-origin: 50% 70%;
-}
-
-h1 .h1-letter:hover {
-	transform: scale(1.22);
-}
-
-h2 .h1-letter {
-	display: inline-block;
-	transition: transform 140ms ease;
-	transform-origin: 50% 70%;
-}
-
-h2 .h1-letter:hover {
-	transform: scale(1.22);
-}
-
-h2 {
-	font-size: clamp(2rem, 5vw, 2.5rem);
-}
-
-#about{
-	padding : 3em(min(2em, 15%));
-	text-align: center;
-}
+/* Sections */
 
 section p {
 	margin-top: 1em;
@@ -271,6 +247,7 @@ section > a[href^="project_"]:hover .flex-container h2 {
 	text-decoration: underline;
 }
 
+/* Projects grid */
 .grid-container {
 	margin-top: 2em;
 	margin-bottom: 2em;
@@ -333,7 +310,7 @@ section > a[href^="project_"]:hover .flex-container h2 {
 .grid-container img {
 	width: 100%;
 	height: 100%;
-	border-radius: 0em;
+	border-radius: 0;
 	transition: 100ms ease;
 }
 
@@ -353,9 +330,7 @@ section > a[href^="project_"]:hover .flex-container h2 {
 	padding: 0.3rem 0.7rem;
 	border-radius: 1em;
 	border: 0.2em solid rgb(0, 0, 0);
-	background: var(--link-color)
-}
-.project-button {
+	background: var(--link-color);
 	color: var(--text-header-color);
 }
 
@@ -364,28 +339,21 @@ section > a[href^="project_"]:hover .flex-container h2 {
 	background: #ff9328;
 }
 
-@keyframes AnimationName {
-	0%{background-position:36% 0%}
-	50%{background-position:65% 100%}
-	100%{background-position:36% 0%}
-}
-
-section#contact {
-	text-align: center;
-}
+section#contact,
 section#projects {
 	text-align: center;
 }
 
+/* Responsive tweaks */
 @media (max-width: 988px) {
 
-	main{
+	main {
 		text-align: center;
 	}
-	section{
+	section {
 		text-align: center;
 	}
-   
+
 	main .text-container {
 		padding-top: 0;
 	}
@@ -399,16 +367,10 @@ section#projects {
 		display: flex;
 		flex-direction: column;
 	}
-	.text-container {
-		font-size: 1;
+
+	h1,
+	h2 {
+		font-size: clamp(2rem, 5vw, 2.5rem);
 	}
-
-	h1 {
-	font-size: clamp(2rem, 5vw, 2.5rem);
-}
-h2 {
-	font-size: clamp(2rem, 5vw, 2.5rem);
-}
-
 
 }
