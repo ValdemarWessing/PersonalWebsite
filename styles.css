@@ -330,9 +330,9 @@ section > a[href^="project_"]:hover .flex-container h2 {
 	display: inline-block;
 	padding: 0.3rem 0.7rem;
 	border-radius: 1em;
-	border: 0.2em solid rgb(0, 0, 0);
+	border: 0.2em solid rgba(57, 87, 178, 0.464);
 	background: var(--link-color);
-	color: var(--text-header-color);
+	color: var(--background-color);
 }
 
 .project-button:hover {
