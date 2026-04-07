@@ -6,7 +6,8 @@
 :root {
 	--text-color: #211100;
 	--text-header-color: #201107;
-	--link-color: #f34db3;
+	--link-color: #43d4e8;
+	--highlight-color: #f2bcfe;
 	--background-color: #fffaf5;
 	--card-color: #fce6d466;
 	--glass-bg: rgba(255, 255, 255, 0.4);
@@ -99,7 +100,7 @@ nav li:first-child a {
 	display: inline-block;
 	padding: 0.3rem 0.7rem;
 	border-radius: 1em;
-	border: 0.2em solid rgb(28, 24, 26);
+	border: 0.2em solid rgba(57, 87, 178, 0.464);
 	background: var(--link-color);
 }
 
@@ -110,7 +111,7 @@ nav li:first-child a {
 }
 
 nav a:hover .brand-pill {
-	background: #ff9328;
+	background: var(--highlight-color);
 }
 
 nav a {
@@ -336,7 +337,7 @@ section > a[href^="project_"]:hover .flex-container h2 {
 
 .project-button:hover {
 	text-decoration: none;
-	background: #ff9328;
+	background: var(--highlight-color);
 }
 
 section#contact,
