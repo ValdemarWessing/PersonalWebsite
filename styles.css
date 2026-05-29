@@ -369,6 +369,11 @@ section#projects {
 		display: none;
 	}
 
+	nav ul > li:nth-child(2),
+	nav ul > li:nth-child(4) {
+		display: none;
+	}
+
 	section > a[href^="project_"] .flex-container {
 		flex-direction: row;
 		flex-wrap: wrap;
