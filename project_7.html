@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 7 | Valdemar Wessing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" class="brand-link">
+                    <span class="brand-pill">Valdemar</span>
+                </a>
+                <span class="brand-lastname">Wessing</span>
+            </li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="flex-container" style="margin: 2rem 0;">
+            <h1>Plant Bot</h1>
+        </div>
+        <div class="flex-container" style="margin: 2rem 0;">
+            <video class="project-video" controls preload="metadata">
+                <source src="Images/PlantBot.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="text-container">
+                <p>The Plant Bot is a physical interactive robot designed to make plant care more attentive by translating invisible environmental conditions into emotional, intuitive feedback.
+                <p>The system monitors its plant through three custom-built analog sensor circuits: a moisture sensor built as a voltage divider with a low-pass filter to reject 50 Hz mains interference, a touch sensor using a high-pass filter, op-amp amplifier, and peak detector to detect the body's natural mains pickup when the plant is touched, and a digital light sensor measuring ambient and infrared intensity. All circuits were custom designed.</p>
+                <p>Feedback is delivered through an OLED display showing animated expressive eyes, two servo motors driving a 3D-printed pan-tilt head mechanism, and a piezo buzzer playing short melody in response to moisture changes. The robot's mood, movement speed, and head position all shift continuously based on sensor input drooping when dry, perking up when moist, laughing and panning when the plant is tickled, and slowing down in low light.</p>
+                <p>The physical enclosure was laser-cut from acrylic sheet with integrated ventilation and cable routing, and the pan-tilt mechanism was iteratively modified across three print attempts to correctly seat the servo horns and mounting hardware. The whole system runs on an Arduino Uno, with sensor reads interleaved in time to prevent cross-interference between inputs.</p>
+                <p>The project was a study in how electronics, embedded software, and physical design can be brought together to make something that feels less like a sensor readout and more like a small, expressive creature.</p>
+                <p><a href="projects.html">Back to Projects</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

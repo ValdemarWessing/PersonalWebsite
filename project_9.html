@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 9 | Valdemar Wessing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" class="brand-link">
+                    <span class="brand-pill">Valdemar</span>
+                </a>
+                <span class="brand-lastname">Wessing</span>
+            </li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="flex-container" style="margin: 2rem 0;">
+            <h1>Aural Abstraction</h1>
+            <video class="project-video" controls preload="metadata">
+                <source src="Images/AuralAbstraction.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="text-container">
+                <p>A machine learning system that translates the acoustic character of physical spaces into abstract visual form.</p>
+                <p>Room Impulse Responses, recordings that capture how a space treats sound, were the raw material. A pipeline extracted acoustic features (RT60, clarity, early decay time, spectral content) from 50 RIRs, reduced their dimensionality with PCA, and fed the result into an MLP and Gaussian Process regression model trained to predict visual parameters: surface roughness, structural scale, atmospheric density, and others rendered in a Godot.</p>
+                <p>The visual vocabulary itself came from people where participants listened to three acoustically distinct spaces and described how they would visualize them.</p>
+                <p><a href="projects.html">Back to Projects</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

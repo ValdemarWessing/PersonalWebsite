@@ -230,6 +230,11 @@ section > a[href^="project_"] {
 
 section > a[href^="project_"] .flex-container {
 	transition: transform 160ms ease;
+	flex-direction: row;
+	align-items: center;
+}
+section > a[href^="project_"]:nth-of-type(even) .flex-container {
+	flex-direction: row-reverse;
 }
 section > a[href^="project_"]:hover .flex-container {
 	transform: translateY(-4px);
@@ -362,6 +367,20 @@ section#projects {
 @media (max-width: 600px) {
 	.brand-lastname {
 		display: none;
+	}
+
+	section > a[href^="project_"] .flex-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	section > a[href^="project_"] .flex-container img {
+		order: 0;
+	}
+
+	section > a[href^="project_"] .flex-container .text-container {
+		order: 1;
 	}
 
 	.grid-container {
